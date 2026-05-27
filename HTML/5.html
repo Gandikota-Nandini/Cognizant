@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            width: 300px;
+            padding: 20px;
+            border: 1px solid black;
+        }
+    </style>
+    <script>
+        function showMessage(){
+            document.getElementById("message").innerHTML = "Form submitted successfully!";
+        }
+    </script>
+</head>
+<body>
+    <form onsubmit="showMessage()">
+        <input type="text" placeholder="Enter Name" required autofocus><br><br>
+        <input type="email" placeholder="Enter Email" required><br><br>
+        <input type="password" placeholder="Enter Password" required><br><br>
+        <input type="date" required><br><br>
+        <select required>
+            <option>Music
+
+            </option>
+            <option>Art</option>
+            <option>Food</option>
+            <option>Books</option>
+            </select>selct event<br><br>
+
+            <textarea placeholder="Additional Comments"></textarea><br><br>
+            <input type="submit" value="Submit">
+            <output id="message"></output>
+        </form>
+    
+</body>
+</html>

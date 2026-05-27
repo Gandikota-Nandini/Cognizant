@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function test(){
+            let a=10;
+            console.log("value of a is: " + a);
+            document.getElementById("output").innerHTML="value of a is: " + a;
+
+            debugger;
+a=a+5;
+console.log("value of a after addition is: " + a);
+document.getElementById("output").innerHTML+="value of a is: " + a;
+        }
+    </script>
+</head>
+<body>
+    <button onclick="test()">run Debugger</button><br><br>
+    <p id="output"></p>
+</body>
+</html>

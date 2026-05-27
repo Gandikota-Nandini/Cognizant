@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function savePreference(){
+        var event=document.getElementById("event").value;
+        localStorage.setItem("preferredEvent",event);
+        
+    }
+    function loadPreference(){
+        var savedEvent=localStorage.getItem("preferredEvent");
+        if(savedEvent){
+            document.getElementById("savedPreference").innerHTML="Your preferred event is: "+savedEvent;
+        }else{
+            document.getElementById("savedPreference").innerHTML="No preference saved.";
+        }
+    }
+    function clearPreference(){
+        localStorage.clear();
+        sessionStorage.clear();
+    }
+</script>
+<body onload="loadPreference()">
+    <select id="event" onchange="savePreference()">
+        <option value="">Select an event</option>
+        <option value="Music">Music Event</option>
+        <option value="Art">Art Exhibition</option>
+        <option value="Food">Food Festival</option>
+        <option value="Books">Book Event</option>
+
+    </select><br><br>
+    <button onclick="clearPreference()">Clear Preference</button><br><br>
+    
+</body>
+</html>
