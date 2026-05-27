@@ -20,8 +20,9 @@
         }
     }
     function clearPreference(){
-        localStorage.clear();
-        sessionStorage.clear();
+        localStorage.removeItem("preferredEvent");
+        document.getElementById("savedPreference").selectedIndex=0;
+
     }
 </script>
 <body onload="loadPreference()">
@@ -33,6 +34,7 @@
         <option value="Books">Book Event</option>
 
     </select><br><br>
+    
     <button onclick="clearPreference()">Clear Preference</button><br><br>
     
 </body>
