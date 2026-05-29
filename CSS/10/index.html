@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 20px;
+        }
+        nav{
+            background-color: #333;
+            color: white;
+            padding: 10px;
+        }
+        img{
+            width: 100px;
+            height: 100px;
+        }
+.container{
+    width: 90%;
+
+}
+@media screen and (max-width:600px){
+    nav{
+        flex-direction: column;
+    }
+    img{
+        width: 50vw;
+       
+    }
+    body{
+        font-size: 14px;
+    }
+
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#">home    </a>
+        <a href="#">about    </a>
+        <a href="#">services    </a>
+    </nav>
+    <div class="container">
+        <h1>Responsive Design Example</h1>
+        <p>This is a simple example of responsive design using CSS media queries. Resize the browser window to see how the layout changes.</p>
+        <img src="https://via.placeholder.com/150" alt="Placeholder Image">
+        </div>
+    
+</body>
+</html>
