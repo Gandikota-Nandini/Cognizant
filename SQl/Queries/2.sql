@@ -4,3 +4,6 @@ JOIN Feedback f ON e.event_id = f.event_id
 GROUP BY e.event_id, e.title
 HAVING COUNT(f.feedback_id) >= 1
 ORDER BY avg_rating DESC;
+
+
+
