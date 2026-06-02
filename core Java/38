@@ -1,0 +1,10 @@
+Decompile Class File
+javac Test.java
+
+Open:
+
+JD-GUI
+
+or
+
+java -jar cfr.jar Test.class
